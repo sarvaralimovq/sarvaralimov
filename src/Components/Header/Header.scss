@@ -1,0 +1,91 @@
+.header__inner{
+    text-align: center;
+    margin: 0 auto;
+    text-align: center;
+   background-color: #171717;
+    .nav{
+        text-align: center;
+       max-width: 1840px;
+       padding-top: 28px;
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            a{
+                color: #fff;
+                text-decoration: none;
+                font-size: 36px;
+                font-weight: 700px;
+                display: flex;
+                gap: 10px;
+                h1{
+                    padding-top: 10px;
+                }
+                img{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    
+                }
+            }
+        }
+        .header__list{
+            width: 333px;
+            display: flex;
+            justify-content: space-between;
+            // margin-left: 708px;
+            &:nth-child(1){
+                flex-grow: 1;
+            }
+            .active{
+                a{
+                    color: rgba(14, 162, 192, 0.915);
+                    &::after{
+                        content: '';
+                        width: 100%;
+                        height: 2px;
+                        display: block;
+                        background-color: rgba(14, 162, 192, 0.915);
+                        
+                    }
+                }
+            }
+            li{
+                font-weight: 400;
+                font-size: 18px;
+                color: #fff;
+                padding-top: 20px;
+                &:hover{
+                    a{
+                        transition: all 1s ease;
+                        color: aqua;
+                    }
+                  
+                }
+                a{
+                    color: #fff;
+                }
+            }
+           
+        }
+    }
+}
+@media (max-width:770px){
+    .header__list{
+      display: flex;
+      flex-wrap: wrap;
+      width: 135px !important;
+      color: red;
+    }
+}
+.none{
+    display: none;
+}
+.dropdown{
+    max-height: 500px;
+    margin-top: -80px;
+    i{
+        color: red;
+        font-size: 30px;
+        width: 100%;
+    }
+}
