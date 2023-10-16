@@ -9,9 +9,16 @@
         }
     }
 }
+.contact__big{
+    max-width:1341px ;
+    margin: 0 auto;
+}
 .contact__bottom {
+    max-width: 1341px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+   position: relative;
 }
 .big {
     gap: 37px;
@@ -19,12 +26,14 @@
     flex-wrap: wrap;
     padding-left: 103px;
     max-width: 1200px;
+    justify-content: center;
     input {
         border: none;
         background-color: transparent;
         border-bottom: 1px solid #4f4f4f;
         padding-bottom: 10px;
         padding-right: 316px;
+        color: #fff;
         &::placeholder{
             color: #fff;
             
@@ -34,7 +43,7 @@
     
 }
 .btn {
- margin-left: 440px;
+ padding-top: 27px;
     display: flex;
     justify-content: center;
     button {
@@ -45,6 +54,7 @@
         padding: 12px 32px;
         border: none;
         text-align: center;
+ 
         &:hover{
             background-color: rgb(27, 174, 242);
             color: rgb(255, 255, 255);
@@ -63,5 +73,24 @@
                 left: 16px;
             }
         }
+    }
+}
+@media (max-width:594px){
+    .contact__inner{
+  margin-right: 100px;
+    }
+}
+@media (max-width:500px){
+    .contact__inner{
+  input{
+    padding-right: 200px !important;
+  }
+    }
+}
+@media (max-width:398px){
+    .contact__inner{
+  input{
+    padding-right: 100px !important;
+  }
     }
 }

@@ -1,4 +1,9 @@
 .about__inner {
+  text-align: center;
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
     padding-top: 80px;
   display: flex;
   justify-content: space-between;
@@ -76,7 +81,6 @@ object-fit: cover;
           flex-shrink: 0;
           border-radius: 50%;
           object-fit: cover;
-          
               }
       }
 }
@@ -84,6 +88,7 @@ object-fit: cover;
   .about__right__span{
     width: 300px !important;
     height: 300px !important;
+    margin-top: 100px;
   }
 }
 @media (max-width:715px){
@@ -97,3 +102,71 @@ object-fit: cover;
     justify-content: center;
   }
 }
+// .animeshin{
+//   .about__right__span{
+//     background: rgba(30, 29, 29, 0.20);
+//     border-radius: 50%;
+//     width: 650px;
+//     height: 650px;
+//     align-items: center;
+//     display: flex;
+//     justify-content: center;
+//     border: 1px solid #202020;
+    
+//         img{
+//     width: 90%;
+//     height: 90%;
+//     flex-shrink: 0;
+//     // border-radius: 50%;
+//     object-fit: cover;
+    
+//         }
+//       }
+// }
+.about__right__span{
+  &:hover{
+      animation-name: img__animation;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+  }
+}
+@keyframes img__animation{
+  0%{
+    box-shadow: 0 0 50px red;
+    transition: all 1s ease;
+  }
+  15%{
+    box-shadow: 0 0 70px blue;
+    transition: all 1s ease;
+  }
+  30%{
+    box-shadow: 0 0 90px green;
+    transition: all 1s ease;
+  }
+  40%{
+    box-shadow: 0 0 110px aqua;
+    transition: all 1s ease;
+  }
+  50%{
+    box-shadow: 0 0 130px #021d38;
+    transition: all 1s ease;
+  }
+  60%{
+    box-shadow: 0 0 150px #0847b5;
+     transition: all 1s ease;
+  }
+  70%{
+    box-shadow: 0 0 170px #4d0382;
+    transition: all 1s ease;
+
+  }
+ 
+  100%{
+   box-shadow: 0 0 190px #af0493;
+     transition: all 1s ease;
+
+  }
+}
+
+// linear-gradient(rgba (228, 249, 252, 1),rgba (1, 153, 54, 1),rgba (0, 157, 223, 1),rgba (50, 52, 139, 1),rgba (137, 51, 138, 1),rgba (227, 23, 16, 1),rgba (233, 89, 12, 1))

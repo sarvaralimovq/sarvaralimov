@@ -4,12 +4,12 @@ function Aboutmore() {
     return (
         <div className='Aboutmore'>
             <div className="container">
-                <div className="aboutmore__inner">
+                <div id='about__more' className="aboutmore__inner">
                     <div className="aboutmore__info">
                         <span>
                             <h2>About</h2>
                         </span>
-                        <span>
+                        <span className='aboutmore__info-span2'>
                             <p>Hello my name is Alim Sarazbek Azbekovich I was born in Uzbekistan I am now studying at the front I have already graduated from the pound and the plane remains after that and then I will be a programmer This is my first</p>
                         </span>
 
@@ -43,8 +43,8 @@ function Aboutmore() {
                                     <span className='aboutmore__inner1'></span>
                                 </div>
                                 <span  className='aboutmore__link-span3'>
-                                    <h4>Twitter</h4>
-                                    <p>no Twitter</p>
+                                    <h4>Git Hub</h4>
+                                    <p><a href="https://github.com/sarvaralimovq/sarvaralimov"></a>sarvaralimovq</p>
                                 </span>
                             </a>
                         </li>

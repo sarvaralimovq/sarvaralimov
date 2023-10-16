@@ -24,23 +24,25 @@ function Contact() {
     
     <div className='Contact'>
       <div className="companents">
-        <div className="contact__inner">
+        <div id='3' className="contact__inner">
             <div className="contact__top">
                 <h2>
                 Get in touch
                 </h2>
                 
             </div>
-            <div className="contact__bottom">
+          <div className="contact__big">
+          <div className="contact__bottom">
             
-                    <div className="big">
-                    <input ref={ref1} type="text" placeholder='Name'  />
-                    <input ref={ref2} type="text" placeholder='Last name' />
-                    <input ref={ref3} type="text" placeholder='Email' />
-                    <input ref={ref4} type="text" placeholder='Phone number' />
-                    <span onClick={fn} className='btn'><button>Submit now</button></span>
-                    </div>
-            </div>
+            <div className="big">
+            <input ref={ref1} type="text" placeholder='Name'  />
+            <input ref={ref2} type="text" placeholder='Last name' />
+            <input ref={ref3} type="text" placeholder='Email' />
+            <input ref={ref4} type="text" placeholder='Phone number' />
+            </div><br />
+            <span onClick={fn} className='btn'><button>Submit now</button></span> 
+    </div>
+          </div>
         </div>
       </div>
     </div>

@@ -57,3 +57,18 @@
         }
     }
 }
+@media (max-width:813px){
+    .know__list{
+display: flex;
+flex-wrap: wrap;
+li{
+    background-color: red !important;
+    flex-grow: 1;
+    text-align: center;
+    h3{
+       font-size: 60px !important;
+       
+    }
+}
+    }
+}
