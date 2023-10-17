@@ -93,12 +93,12 @@
 }
 .sticky{
     display: flex !important; 
-    position: fixed;
+    // position: fixed;
     justify-content: space-between !important;
     background-color: #2A3038;
     z-index: 99;
-    transition: all 5s ease !important;
     box-shadow: 0 2px 0 #909090;
     max-width: 100% !important;
     // padding-top: 28px;
+    background-color: red;
 }
