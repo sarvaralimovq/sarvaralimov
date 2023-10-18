@@ -1,9 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./Header.scss";
 import { Link } from "react-router-dom";
 import logo from "../../img/logo.png";
+import { Context } from "../../Context/Context";
 function Header() {
-  const [active, setActive] = useState(0);
+  
+  const {svet, setSvet} = useContext(Context)
+  console.log(svet);
+  const [active, setActive] = useState(1);
   const [vWidth, setVWidth] = useState(window.innerWidth);
   window.addEventListener("resize", () => {
     setVWidth(window.innerWidth);
@@ -70,6 +74,14 @@ function Header() {
                   <a className="dropdown-item" href="#3">
                     Contact me
                   </a>
+                </li>
+                
+                <li>
+                  <button onClick={setSvet(!svet)}>
+                    {
+                      svet == true ?'dark':'light'
+                    }
+                  </button>
                 </li>
 
                 {/* <li onClick={() => setActive(1)} className={active == 1 ? 'active' : null}>
