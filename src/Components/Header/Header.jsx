@@ -78,9 +78,9 @@ function Header() {
                 
                 <li>
                   <button onClick={setSvet(!svet)}>
-                    {
+                    {/* {
                       svet == true ?'dark':'light'
-                    }
+                    } */}
                   </button>
                 </li>
 
