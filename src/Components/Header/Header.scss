@@ -2,15 +2,19 @@
     text-align: center;
     margin: 0 auto;
     text-align: center;
-
+    width: 100% !important;
     .nav{
-
+        z-index: 99;
+        position: fixed;
+        width: 100%;
         text-align: center;
-       max-width: 1840px !important;
-    //    max-width:100%;
+    //    width: 100% !important;
+       max-width:100%;
        padding-top: 28px;
         display: flex;
         justify-content: space-between !important;
+    transition: 900ms all ease;
+    padding-right: 200px;
         .logo{
             a{
                 color: #fff;
@@ -56,9 +60,10 @@
                 font-size: 18px;
                 color: #fff;
                 padding-top: 20px;
+                padding-left: 25px;
                 &:hover{
                     a{
-                        transition: all 1s ease;
+                        // transition: all 1s ease;
                         color: aqua;
                     }
                   
@@ -76,29 +81,54 @@
       display: flex;
       flex-wrap: wrap;
       width: 135px !important;
-      color: red;
+     
     }
 }
 .none{
     display: none;
 }
+.dropdown-toggle{
+    background-color: #fff;
+}
 .dropdown{
-    max-height: 500px;
-    margin-top: -80px;
+    // max-height: 500px;
+    margin-right: -170px;
+    background-color: #fff;
     i{
-        color: red;
+        color: #fff;
         font-size: 30px;
         width: 100%;
+        
     }
 }
 .sticky{
-    display: flex !important; 
-    // position: fixed;
-    justify-content: space-between !important;
-    background-color: #2A3038;
-    z-index: 99;
-    box-shadow: 0 2px 0 #909090;
-    max-width: 100% !important;
+    // max-width:100%;
     // padding-top: 28px;
-    background-color: red;
+     display: flex;
+     justify-content: space-between !important;
+    // padding-top: 28px;
+    background-color: #2a3038;
+    // margin: 0 auto;
+    // padding-right: 83px !important;
+    transition: 900ms all ease;
+    
+}
+.btn__header{
+color: #fff;
+
+button{
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+padding: 5px 35px;
+}
+}
+.svet{
+    button{
+        border: 1px solid #fff;
+        background-color: black !important;
+        background: transparent;
+        color: #fff;
+    padding: 5px 35px;
+    }
 }

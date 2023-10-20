@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 import logo from "../../img/logo.png";
 import { Context } from "../../Context/Context";
 function Header() {
-  
-  const {svet, setSvet} = useContext(Context)
+  const { svet, setSvet } = useContext(Context);
   console.log(svet);
   const [active, setActive] = useState(1);
   const [vWidth, setVWidth] = useState(window.innerWidth);
@@ -75,24 +74,31 @@ function Header() {
                     Contact me
                   </a>
                 </li>
-                
-                <li>
-                  <button onClick={setSvet(!svet)}>
-                    {/* {
-                      svet == true ?'dark':'light'
-                    } */}
+
+                <li className={svet == true?'svet':'btn__header'}>
+                  <button onClick={() => setSvet(!svet)}>
+                    {svet == true ? "dark" : "light"}
                   </button>
                 </li>
 
-                {/* <li onClick={() => setActive(1)} className={active == 1 ? 'active' : null}>
-                <Link to={2}>About me</Link>
-              </li>
-              <li onClick={() => setActive(2)} className={active == 2 ? 'active' : null}>
-                <Link to={3}>Services</Link>
-              </li>
-              <li onClick={() => setActive(3)} className={active == 3 ? 'active' : null}>
-                <Link to={4}>Contact me</Link>
-              </li> */}
+                {/* <li
+                  onClick={() => setActive(1)}
+                  className={active == 1 ? "active" : null}
+                >
+                  <Link to={2}>About me</Link>
+                </li>
+                <li
+                  onClick={() => setActive(2)}
+                  className={active == 2 ? "active" : null}
+                >
+                  <Link to={3}>Services</Link>
+                </li>
+                <li
+                  onClick={() => setActive(3)}
+                  className={active == 3 ? "active" : null}
+                >
+                  <Link to={4}>Contact me</Link>
+                </li> */}
               </ul>
             </div>
           </nav>

@@ -10,7 +10,7 @@ function About() {
         <div className="about__inner">
           <div className="about__left">
             <div className="about__info">
-              <h2>Hi, I am Alimov Sarvarbek</h2>\
+              <h2>Hi, I am Alimov Sarvarbek</h2>
               <span>
                 <p>
                 Frontend Developer
