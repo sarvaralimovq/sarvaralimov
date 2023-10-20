@@ -1,19 +1,22 @@
+.Header{
+    padding-bottom: 100px;
+}
 .header__inner{
     text-align: center;
     margin: 0 auto;
     text-align: center;
     width: 100% !important;
     .nav{
+        padding-right: 250px !important;
         z-index: 99;
         position: fixed;
-        width: 100%;
+        width: 100% !important;
         text-align: center;
     //    width: 100% !important;
-       max-width:100%;
        padding-top: 28px;
         display: flex;
         justify-content: space-between !important;
-    transition: 900ms all ease;
+    // transition: 900ms all ease;
     padding-right: 200px;
         .logo{
             a{
@@ -88,18 +91,44 @@
     display: none;
 }
 .dropdown-toggle{
-    background-color: #fff;
+    position: relative;
+    width: 50px;
+    // background-color: #fff;
+    height: 50px;
+    &::after{
+        display: none;
+    }
 }
 .dropdown{
+    position: relative;
     // max-height: 500px;
     margin-right: -170px;
-    background-color: #fff;
+    background-color: transparent;
     i{
+        text-align: center;
+        position: absolute;
+top: 0;
         color: #fff;
         font-size: 30px;
         width: 100%;
         
     }
+}
+.dropdown-menu{
+    // position: absolute !important; 
+//   margin-left: -50px !important;
+    // max-width: 7700px !important;
+    width: 770px;
+    height: 100vh;
+    background-color: rgba(230, 228, 226, 5.6);
+    border: 1px solid #fff;
+
+  .dropdown-item{
+    &:hover{
+        background-color: #909090;
+        opacity: 0.9;
+    }
+  }
 }
 .sticky{
     // max-width:100%;
@@ -110,7 +139,7 @@
     background-color: #2a3038;
     // margin: 0 auto;
     // padding-right: 83px !important;
-    transition: 900ms all ease;
+    // transition: 900ms all ease;
     
 }
 .btn__header{

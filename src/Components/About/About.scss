@@ -76,35 +76,67 @@ object-fit: cover;
     }
   }
 }
+// @media (max-width:1206px){
+//   .about__right__span{
+//         width: 400px !important;
+//         height: 400px !important;
+//         img{
+//           width: 90%;
+//           height: 90%;
+//           flex-shrink: 0;
+//           border-radius: 50%;
+//           object-fit: cover;
+//               }
+//       }
+// }
 @media (max-width:1084px){
   .about__right__span{
         width: 400px !important;
         height: 400px !important;
+        margin-left: 25px;
+
         img{
           width: 90%;
           height: 90%;
           flex-shrink: 0;
           border-radius: 50%;
           object-fit: cover;
+          margin: 0 auto;
               }
       }
 }
-@media (max-width:808px){
-  .about__right__span{
-    width: 300px !important;
-    height: 300px !important;
-    margin-top: 100px;
+// @media (max-width:808px){
+//   .about__right__span{
+//     width: 300px !important;
+//     height: 300px !important;
+//     margin-top: 100px;
+//   }
+// }
+// @media (max-width:932px){
+//  .about__right{
+//   margin-left: 70px;
+//   padding-top: 50px;
+//  }
+//   .about__inner{
+//   margin-left:100px;
+//   }
+// }
+@media (max-width:526px){
+  .about__left{
+    margin-left: -45px ;
+    h2{
+      padding-right: 0 !important;
+      margin-right: 0 !important;
+      width: 400px !important; 
+    }
   }
-}
-@media (max-width:932px){
- .about__right{
-  margin-left: 70px;
-  padding-top: 50px;
+ 
+  .about__right{
+    margin-top: 30px !important;
+    padding-right: 10px !important;
+  }
+ 
  }
-  .about__inner{
-  margin-left:100px;
-  }
-}
 
 
 // .animeshin{
@@ -129,13 +161,48 @@ object-fit: cover;
 //       }
 // }
 .about__right__span{
+  overflow: hidden;
+  position: relative;
   &:hover{
       animation-name: img__animation;
       animation-duration: 3s;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
   }
+  &::before{
+    content: '';
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    background: conic-gradient(
+#fd004c,
+#fe9000,
+#3edf4b,
+#3363ff,
+#021d38,
+#b102b7,
+#fd004c
+    );
+    left: -25%;
+top: 25%;
+
+  }
+  &::after{
+    content: "sarvar";
+    position: absolute;
+    background-color: transparent;
+    height: 93%;
+    height: 93%;
+    top:3.5% ;
+    left: 3.5%;
+    color: #fff;
+    letter-spacing: 6px ;
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+  }
 }
+
 @keyframes img__animation{
   0%{
     box-shadow: 0 0 50px red;
@@ -173,5 +240,7 @@ object-fit: cover;
 
   }
 }
+
+
 
 // linear-gradient(rgba (228, 249, 252, 1),rgba (1, 153, 54, 1),rgba (0, 157, 223, 1),rgba (50, 52, 139, 1),rgba (137, 51, 138, 1),rgba (227, 23, 16, 1),rgba (233, 89, 12, 1))

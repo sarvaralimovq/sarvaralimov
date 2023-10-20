@@ -23,13 +23,14 @@ function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <div className="Header">
       <div className="container">
         <div id="1" className="header__inner">
           <nav className="nav">
             <div className="logo">
-              <Link>
+              <Link >
                 <img src={logo} alt="img" />
                 <h1>Alimov</h1>
               </Link>
@@ -40,7 +41,7 @@ function Header() {
                   vWidth <= 770 ? "btn btn-secondary dropdown-toggle" : "none"
                 }
                 href="#/"
-                role="button"
+                // role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
