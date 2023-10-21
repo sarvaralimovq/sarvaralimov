@@ -101,6 +101,19 @@ ol {
 
 
 .light{
-  background-color: #fff !important;
+  background-color: rgb(98, 89, 89) !important;
   color: black !important;
+  h2{
+    color: black !important;
+  }
+  a{
+    color: black !important;
+  }
+  input{
+    color: black !important;
+    &::placeholder{
+      color: black !important;
+    }
+  }
+ 
 }

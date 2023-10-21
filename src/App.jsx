@@ -6,6 +6,7 @@ import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Know from "./Components/Know/Know";
+import Portfolios from "./Components/Portfolios/Portfolios";
 import { Context } from "./Context/Context";
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
       <span className="app__span5 app__span">
         
       </span>
+      <Portfolios/>
       <Contact/>
       <span className="app__span6 app__span"></span>
       <Footer />

@@ -25,10 +25,10 @@ function Header() {
   }, []);
 
   return (
-    <div className="Header">
+    <div className={svet == true?'Header light' : 'dark Header'}>
       <div className="container">
         <div id="1" className="header__inner">
-          <nav className="nav">
+          <nav className={svet == true?'nav light' : 'dark nav'}>
             <div className="logo">
               <Link >
                 <img src={logo} alt="img" />

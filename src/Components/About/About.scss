@@ -9,17 +9,17 @@
     padding-top: 204px;
     padding-left: 50px;
     .about__btn__more{
-      border: none !important;
+      border: 3px solid #2a3038 !important;
       border-radius: 5px;
       padding: 15px 100px !important;
       overflow: hidden;
       position: relative;
-      
+  
         &::before{
           content: '';
-          border: none;
-          width: 150%;
-          height: 150%;
+          // border: none;
+          width: 210%;
+          height: 720%;
           position: absolute;
           background: conic-gradient(
       #fd004c,
@@ -30,9 +30,10 @@
       #b102b7,
       #fd004c,
           );
-          left: -25%;
-      top: 0%;
-      animation: animatino-border 1s linear infinite;
+          left: -60%;
+      top: -140%;
+      margin: 0 auto;
+      animation: animatino-border 2s linear infinite;
      
         }
         &::after{
@@ -233,7 +234,7 @@ animation: animatino-border 2s linear infinite;
 
   }
   &::after{
-    content: "sarvar";
+    content: "";
     background-image: url('../../img/img__about.jpg');
     background-repeat: no-repeat;
     background-position:center;
