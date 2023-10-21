@@ -18,7 +18,7 @@ function About() {
             </div>
             <div className="about__more">
               <button className="about__btn__more">
-                <a href="#about__more">Learn More</a>
+                {/* <a href="#about__more">Learn More</a> */}
               </button>
              
             </div>
