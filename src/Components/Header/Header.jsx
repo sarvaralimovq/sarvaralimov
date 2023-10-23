@@ -35,10 +35,10 @@ function Header() {
                 <h1>Alimov</h1>
               </Link>
             </div>
-            <div className={vWidth <= 770 ? "dropdown " : "header__list"}>
+            <div className={vWidth <= 838 ? "dropdown " : "header__list"}>
               <a
                 className={
-                  vWidth <= 770 ? "btn btn-secondary dropdown-toggle" : "none"
+                  vWidth <= 838 ? "btn btn-secondary dropdown-toggle" : "none"
                 }
                 href="#/"
                 // role="button"
@@ -49,7 +49,7 @@ function Header() {
               </a>
 
               <ul
-                className={vWidth <= 770 ? " dropdown-menu  " : "header__list"}
+                className={vWidth <= 838 ? " dropdown-menu  " : "header__list"}
               >
                 <li
                   onClick={() => setActive(1)}

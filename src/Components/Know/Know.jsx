@@ -19,11 +19,13 @@ function Know() {
               </li>
               <li className='know__item'>
                 <span className='know__span'><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwwg4gs1NStkYti6exgaxkAbw11zj9Z3mbAi8LzW62gsy3BmWNDusrjQ_vb25xnvhgpXs&usqp=CAU" alt="img" /></span>
-                <h3>react js</h3>
+                <h3>sass</h3>
               </li>
               <li className='know__item'>
                 <span className='know__span'><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuA3rfXk2RKmvDkgBGOUxIkeW4pG7B5V_JBnMNkVWhhVbmh4zlgw-YVgT7qjddadH6CDo&usqp=CAU" alt="img" /></span>
-                <h3>sass</h3>
+                <h3>
+                react js
+                </h3>
               </li>
             </ul>
           </div>

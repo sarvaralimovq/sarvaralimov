@@ -16,7 +16,7 @@ function Aboutmore() {
                     </div>
                     <ul className='aboutmore__list'>
                         <li className='aboutmore__item'>
-                            <a className='aboutmore__link' href="#/">
+                            <a className='aboutmore__link'  href="#/">
                                 <div className="aboutmore__inner">
                                     <span className='aboutmore__inner1'></span>
                                 </div>
@@ -27,35 +27,35 @@ function Aboutmore() {
                             </a>
                         </li>
                         <li className='aboutmore__item'>
-                            <a className='aboutmore__link'  href="https://mail.google.com/mail/u/0/#inbox">
+                            <a className='aboutmore__link' target='_blank'  href="https://mail.google.com/mail/u/0/#inbox">
                                 <div className="aboutmore__inner">
                                     <span className='aboutmore__inner1'></span>
                                 </div>
                                 <span className='aboutmore__link-span'>
                                     <h4>Email Address</h4>
-                                    <p><a href="https://mail.google.com/mail/u/0/#inbox">alimovsarvar@gmail.com</a></p>
+                                    <p><a target='_blank' href="https://mail.google.com/mail/u/0/#inbox">alimovsarvar@gmail.com</a></p>
                                 </span>
                             </a>
                         </li>
                         <li className='aboutmore__item'>
-                            <a className='aboutmore__link' href="#/">
+                            <a className='aboutmore__link' target='_blank' href="#/">
                                 <div className="aboutmore__inner">
                                     <span className='aboutmore__inner1'></span>
                                 </div>
                                 <span  className='aboutmore__link-span3'>
                                     <h4>Git Hub</h4>
-                                    <p><a href="https://github.com/sarvaralimovq/sarvaralimov"></a>sarvaralimovq</p>
+                                    <p><a target='_blank' href="https://github.com/sarvaralimovq/sarvaralimov"></a>sarvaralimovq</p>
                                 </span>
                             </a>
                         </li>
                         <li className='aboutmore__item'>
-                            <a className='aboutmore__link' href="tel:998973394343">
+                            <a className='aboutmore__link' target='_blank' href="tel:998973394343">
                                 <div className="aboutmore__inner">
                                     <span className='aboutmore__inner1'></span>
                                 </div>
                                 <span className='aboutmore__link-span4'>
                                     <h4>Phone</h4>
-                                    <p><a href="tel:998973394343">998973394343</a></p>
+                                    <p><a target='_blank' href="tel:998973394343">998973394343</a></p>
                                 </span>
                             </a>
                         </li>

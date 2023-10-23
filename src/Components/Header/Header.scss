@@ -103,9 +103,10 @@
     }
 }
 .dropdown{
+//   margin-left: 250px !important;
     position: relative;
     // max-height: 500px;
-    margin-right: -170px;
+    margin-right: -190px;
     background-color: transparent;
     i{
         text-align: center;
@@ -115,6 +116,11 @@ top: 0;
         font-size: 30px;
         width: 100%;
         
+    }
+}
+@media (max-width:454px){
+    .dropdown{
+        margin-right: -220px;
     }
 }
 .dropdown-menu{
