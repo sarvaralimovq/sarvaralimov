@@ -1,6 +1,8 @@
 .Portfolios {
   padding: 50px 0;
   margin: 0 auto;
+
+
 }
 .portfolios__top {
   text-align: center;
@@ -14,20 +16,24 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+ 
   .portfolios__item {
-    width: 450px;
-    height: 400px;
-    background-color: #333a43;
-    box-shadow: 0 0 10px;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 21px !important;
-    font-family: 900 !important;
-    img {
+      width: 450px;
+      height: 400px;
+      background-color: #333a43;
+      box-shadow: 0 0 10px;
+      border-radius: 15px;
+      text-align: center;
+      font-size: 21px !important;
+      font-family: 900 !important;
+      transition: all 1s ease !important;
+
+      img {
       width: 100%;
       height: 400px;
       object-fit: cover;
       border-radius: 15px;
+    //   transition: all 1s ease !important;
     }
     h3 {
       color: #fff;
@@ -48,14 +54,19 @@
 }
 .portfolios__item {
   position: relative;
-//   overflow: hidden;
+  overflow: hidden;
+ transition: all 1s ease !important;
+
  .hover__portfoliyo{
-    transform: translateY(500px) !important;
+     transition: all 1s ease !important;
+    transform: translateY(500px)  !important;
+    
+
  }
   
     &:hover {
-      background: red;
-        
+    
+     
       .hover__portfoliyo {
         width: 100%;
         height: 100%;
@@ -63,8 +74,9 @@
         background-color: rgba(0, 0, 0, 0.8);
         left: 0;
         transition: all 1s ease;
-        transform: translateY(0px) !important;
+        transform: translateY(0) !important;
       .hover__item{
+       
         h3{
             margin-top: 30%;
         }
