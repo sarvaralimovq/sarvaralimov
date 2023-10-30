@@ -5,7 +5,6 @@ import logo from "../../img/logo.png";
 import { Context } from "../../Context/Context";
 function Header() {
   const { svet, setSvet } = useContext(Context);
-  console.log(svet);
   const [active, setActive] = useState(1);
   const [vWidth, setVWidth] = useState(window.innerWidth);
   window.addEventListener("resize", () => {
@@ -25,15 +24,15 @@ function Header() {
   }, []);
 
   return (
-    <div className={svet == true?'Header light' : 'dark Header'}>
+    <div className={svet == true ? "Header light" : "dark Header"}>
       <div className="container">
         <div className="header__inner">
-          <nav className={svet == true?'nav light' : 'dark nav'}>
+          <nav className={svet == true ? "nav light" : "dark nav"}>
             <div className="logo">
-           <a href="#about">
+              <a href="#about">
                 <img src={logo} alt="img" />
                 <h1>Alimov</h1>
-                </a>
+              </a>
             </div>
             <div className={vWidth <= 838 ? "dropdown " : "header__list"}>
               <a
@@ -53,7 +52,7 @@ function Header() {
               >
                 <li
                   onClick={() => setActive(1)}
-                  className={active == 1 ? "active" : null}
+                  className={active == 1  ? "active" : null}
                 >
                   <a className="dropdown-item" href="#about">
                     About me
@@ -76,7 +75,7 @@ function Header() {
                   </a>
                 </li>
 
-                <li className={svet == true?'svet':'btn__header'}>
+                <li className={svet == true ? "svet" : "btn__header"}>
                   <button onClick={() => setSvet(!svet)}>
                     {svet == true ? "dark" : "light"}
                   </button>

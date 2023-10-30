@@ -5,7 +5,7 @@ import img4 from '../lib/img__data/img4.png'
 export const dataPortfolios = [
     {
         id:1,
-        name:'one-work',
+        name:'first-work',
         img:img1,
         info:'https://one-work.netlify.app/',
     },

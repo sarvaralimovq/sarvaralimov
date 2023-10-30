@@ -16,13 +16,14 @@ function Portfolios() {
                         {
                             dataPortfolios?.map((item, index) => (
                                 <li className='portfolios__item' key={index}>
-                                    <a href={item.info} target='_blank'>
                                     <img src={item.img} alt="img" />
-                                        <h3>{item.name}</h3>
+                                    <span className='hover__portfoliyo' href={item.info} target='_blank'>
+                                       <span className='hover__item'> 
+                                       <h3>{item.name}</h3>
                                         <span className='portfolios__span'>
-                                            <a target='_blank' href={item.info}>{item.info}</a>
-                                        </span>
-                                    </a>
+                                            <a target='_blank' href={item.info}>more</a>
+                                        </span></span>
+                                    </span>
                                        
                                     
                                 </li>

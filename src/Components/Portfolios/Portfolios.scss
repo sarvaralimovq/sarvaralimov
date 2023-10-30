@@ -1,49 +1,70 @@
 .Portfolios {
-    padding: 50px 0;
-    margin: 0 auto;
+  padding: 50px 0;
+  margin: 0 auto;
 }
 .portfolios__top {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
 .portfolios__list {
-    margin: 0 auto;
-    padding-top: 50px;
-    width: 80%;
-    gap: 50px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    .portfolios__item {
-        width: 450px;
-        height: 500px;
-        background-color: #333a43;
-        box-shadow: 0 0 10px;
-        border-radius: 15px;
-        text-align: center;
-        font-size: 21px !important;
-        font-family: 900 !important;
-        img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-radius: 15px;
-        }
-        h3 {
-            color: #fff;
-            font-size: 21px !important;
-            font-family: 900 !important;
-           
-            span {
-                width: 100%;
-                height: 20px;
-                a{
-                    color: rgb(108, 108, 243) !important;
-                    font-size: 35px !important;
-                    font-family: 900 !important;
-                   
-                }
-            }
-        }
+  margin: 0 auto;
+  padding-top: 50px;
+  width: 80%;
+  gap: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .portfolios__item {
+    width: 450px;
+    height: 400px;
+    background-color: #333a43;
+    box-shadow: 0 0 10px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 21px !important;
+    font-family: 900 !important;
+    img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 15px;
     }
+    h3 {
+      color: #fff;
+      font-size: 21px !important;
+      font-family: 900 !important;
+
+      span {
+        width: 100%;
+        height: 20px;
+        a {
+          color: rgb(108, 108, 243) ;
+          font-size: 35px !important;
+          font-family: 900 !important;
+        }
+      }
+    }
+  }
+}
+.portfolios__item {
+  position: relative;
+  overflow: hidden;
+  
+    &:hover {
+      background: red;
+      .hover__portfoliyo {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        left: 0;
+      .hover__item{
+        h3{
+            margin-top: 30%;
+        }
+      }
+   
+      }
+    }
+  
 }
