@@ -5,7 +5,7 @@ function Know() {
   return (
     <div className='Know'>
       <div className="container">
-        <div id='2' className="know__inner">
+        <div id='services' className="know__inner">
           <div className="know__top">
             <h2>
               What i do

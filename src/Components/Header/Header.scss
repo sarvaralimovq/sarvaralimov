@@ -4,6 +4,8 @@
 .Header {
   position: fixed;
   width: 100% !important;
+  z-index: 99;
+  background-color: #2a3038;
 }
 .header__inner {
   text-align: center;
@@ -122,8 +124,8 @@
   // position: absolute !important;
   //   margin-left: -50px !important;
   // max-width: 7700px !important;
-  width: 770px;
-  height: 100vh;
+  width: 50px;
+  text-align: center;
   background-color: rgba(230, 228, 226, 5.6);
   border: 1px solid #fff;
 
@@ -143,7 +145,7 @@
   background-color: #2a3038;
   // margin: 0 auto;
   // padding-right: 83px !important;
-  // transition: 900ms all ease;
+  transition: 900ms all ease;
 }
 .btn__header {
   color: #fff;

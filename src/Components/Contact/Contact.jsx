@@ -24,7 +24,7 @@ function Contact() {
     
     <div className='Contact'>
       <div className="companents">
-        <div id='3' className="contact__inner">
+        <div id='contact' className="contact__inner">
             <div className="contact__top">
                 <h2>
                 Get in touch

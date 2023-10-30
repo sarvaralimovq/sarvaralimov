@@ -27,13 +27,13 @@ function Header() {
   return (
     <div className={svet == true?'Header light' : 'dark Header'}>
       <div className="container">
-        <div id="1" className="header__inner">
+        <div className="header__inner">
           <nav className={svet == true?'nav light' : 'dark nav'}>
             <div className="logo">
-              <Link >
+           <a href="#about">
                 <img src={logo} alt="img" />
                 <h1>Alimov</h1>
-              </Link>
+                </a>
             </div>
             <div className={vWidth <= 838 ? "dropdown " : "header__list"}>
               <a
@@ -55,7 +55,7 @@ function Header() {
                   onClick={() => setActive(1)}
                   className={active == 1 ? "active" : null}
                 >
-                  <a className="dropdown-item" href="#1">
+                  <a className="dropdown-item" href="#about">
                     About me
                   </a>
                 </li>
@@ -63,7 +63,7 @@ function Header() {
                   onClick={() => setActive(2)}
                   className={active == 2 ? "active" : null}
                 >
-                  <a className="dropdown-item" href="#2">
+                  <a className="dropdown-item" href="#services">
                     Services
                   </a>
                 </li>
@@ -71,7 +71,7 @@ function Header() {
                   onClick={() => setActive(3)}
                   className={active == 3 ? "active" : null}
                 >
-                  <a className="dropdown-item" href="#3">
+                  <a className="dropdown-item" href="#contact">
                     Contact me
                   </a>
                 </li>

@@ -6,7 +6,7 @@ function About() {
   //  const [animeshin , setAnimeshin] = useState(false)
   //  console.log(animeshin);
   return (
-    <div id="1" className="About">
+    <div id="about" className="About">
       <div className="container">
         <div className="about__inner">
           <div className="about__left">
