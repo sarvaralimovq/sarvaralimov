@@ -51,26 +51,26 @@ function Header() {
                 className={vWidth <= 838 ? " dropdown-menu  " : "header__list"}
               >
                 <li
-                  onClick={() => setActive(1)}
+                  
                   className={active == 1  ? "active" : null}
                 >
-                  <a className="dropdown-item" href="#about">
+                  <a onClick={() => setActive(1)} className="dropdown-item" href="#about">
                     About me
                   </a>
                 </li>
                 <li
-                  onClick={() => setActive(2)}
+                  
                   className={active == 2 ? "active" : null}
                 >
-                  <a className="dropdown-item" href="#services">
+                  <a onClick={() => setActive(2)} className="dropdown-item" href="#services">
                     Services
                   </a>
                 </li>
                 <li
-                  onClick={() => setActive(3)}
+                  
                   className={active == 3 ? "active" : null}
                 >
-                  <a className="dropdown-item" href="#contact">
+                  <a onClick={() => setActive(3)} className="dropdown-item" href="#contact">
                     Contact me
                   </a>
                 </li>
